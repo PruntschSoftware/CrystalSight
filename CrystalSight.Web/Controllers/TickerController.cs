@@ -18,14 +18,6 @@ namespace CrystalSight.Web.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        [Route("FetchSymbol")]
-        public StockTicker FetchSymbol()
-        {
-            return new StockTicker() { Symbol = "AMSC" };
-        }
-
-
         [HttpPost]
         [Route("ChangeTickerSymbol")]
         public async Task ChangeTickerSymbol([FromBody] TickerModel tickerModel)
