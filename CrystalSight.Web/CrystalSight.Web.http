@@ -1,0 +1,6 @@
+@CrystalSight.Web_HostAddress = http://192.168.178.83:5022
+
+GET {{CrystalSight.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
